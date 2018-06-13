@@ -1,22 +1,96 @@
 // Create global variables for
     // Randomly generated target number
+    var targetNumber = Math.floor(Math.random() * (120 - 19)) + 19;
+    console.log(targetNumber);
+    $("#target-number").text(targetNumber);
     // Win counter
+    var winCounter = 0;
     // Loss counter
+    var lossCounter = 0;
     // Random number for crystal 1
-    // Random number for crystal 2
-    // Random number for crystal 3
-    // Random number for crystal 4
+    var crystal1Value = Math.floor(Math.random() * (12 - 1)) + 1;
+    console.log(crystal1Value);
+    // // Random number for crystal 2
+    var crystal2Value = Math.floor(Math.random() * (12 - 1)) + 1;
+    console.log(crystal2Value);
+    // // Random number for crystal 3
+    var crystal3Value = Math.floor(Math.random() * (12 - 1)) + 1;
+    console.log(crystal3Value);
+    // // Random number for crystal 4
+    var crystal4Value = Math.floor(Math.random() * (12 - 1)) + 1;
+    console.log(crystal4Value);
     // User's tally
-
-
-// Initialize the game
-    // Set win counter, loss counter and user's tally to 0
+    var userTally = 0;
 
 // Start the game
-    // Ask the computer to randomly generate a target number between 19-120 at the start of each game
-    // Print that number to the box for the generated target number
-    // Ask the computer to randomly generate a number between 1-12 for each of the crystals
     // Print the assigned number to user's tally upon each click
+    $("#crystal1").on("click", function(){
+        userTally += crystal1Value;
+        console.log(userTally);
+        $("#user-tally").text(userTally);
+
+        if (userTally === targetNumber) {
+            winCounter++;
+            $("#win-counter").html(winCounter);
+            alert("You win!");
+        }
+        else if (userTally >= targetNumber) {
+            lossCounter++;
+            $("#loss-counter").html(lossCounter);
+            alert("You lose!");
+        }
+    });
+
+    $("#crystal2").on("click", function(){
+        userTally += crystal2Value;
+        console.log(userTally);
+        $("#user-tally").text(userTally);
+
+        if (userTally === targetNumber) {
+            winCounter++;
+            $("#win-counter").html(winCounter);
+            alert("You win!");
+        }
+        else if (userTally >= targetNumber) {
+            lossCounter++;
+            $("#loss-counter").html(lossCounter);
+            alert("You lose!");
+        }
+    });
+
+    $("#crystal3").on("click", function(){
+        userTally += crystal3Value;
+        console.log(userTally);
+        $("#user-tally").text(userTally);
+
+        if (userTally === targetNumber) {
+            winCounter++;
+            $("#win-counter").html(winCounter);
+            alert("You win!");
+        }
+        else if (userTally >= targetNumber) {
+            lossCounter++;
+            $("#loss-counter").html(lossCounter);
+            alert("You lose!");
+        }
+    });
+
+    $("#crystal4").on("click", function(){
+        userTally += crystal4Value;
+        console.log(userTally);
+        $("#user-tally").text(userTally);
+
+        if (userTally === targetNumber) {
+            winCounter++;
+            $("#win-counter").html(winCounter);
+            alert("You win!");
+        }
+        else if (userTally >= targetNumber) {
+            lossCounter++;
+            $("#loss-counter").html(lossCounter);
+            alert("You lose!");
+        }
+    });
     // Allow user's tally to update the numbers according to the crystals clicked
 
 // Check to see if the user's tally matches the generated target number

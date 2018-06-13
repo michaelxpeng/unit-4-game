@@ -1,0 +1,57 @@
+body {
+    background-color: powderblue;
+}
+
+#crystal1 {
+    width: 150px;
+    height: 150px;
+    margin-top: 150px;
+    background-color: white;
+}
+
+#crystal2 {
+    width: 150px;
+    height: 150px;
+    margin-top: 150px;
+    background-color: white;
+}
+
+#crystal3 {
+    width: 150px;
+    height: 150px;
+    margin-top: 150px;
+    background-color: white;
+}
+
+#crystal4 {
+    width: 150px;
+    height: 150px;
+    margin-top: 150px;
+    background-color: white;
+}
+
+#target-number {
+    font-size: 50px;
+    background-color: green;
+    color: purple;
+    padding-right: 200px;
+    padding-bottom: 150px;
+}
+
+.header {
+    background-color: orange;
+    color: white;
+    width: 30%;
+    height: 50px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.instructions {
+    background-color: beige;
+    color: green;
+    padding: 50px 10px;
+    text-align: left;
+    font-weight: bold;
+    width: 50%;
+}
