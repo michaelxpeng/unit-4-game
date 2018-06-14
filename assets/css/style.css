@@ -2,49 +2,16 @@ body {
     background-color: powderblue;
 }
 
-#crystal1 {
-    width: 150px;
-    height: 150px;
-    margin-top: 150px;
-    background-color: white;
-}
-
-#crystal2 {
-    width: 150px;
-    height: 150px;
-    margin-top: 150px;
-    background-color: white;
-}
-
-#crystal3 {
-    width: 150px;
-    height: 150px;
-    margin-top: 150px;
-    background-color: white;
-}
-
-#crystal4 {
-    width: 150px;
-    height: 150px;
-    margin-top: 150px;
-    background-color: white;
-}
-
-#target-number {
-    font-size: 50px;
-    background-color: green;
-    color: purple;
-    padding-right: 200px;
-    padding-bottom: 150px;
-}
-
 .header {
     background-color: orange;
     color: white;
-    width: 30%;
+    width: 100%;
     height: 50px;
     padding: 30px;
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
 }
 
 .instructions {
@@ -53,5 +20,64 @@ body {
     padding: 50px 10px;
     text-align: left;
     font-weight: bold;
-    width: 50%;
+    width: 100%;
+    font-size: 20px;
+}
+
+#target-number {
+    font-size: 50px;
+    background-color: lightgreen;
+    color: Maroon;
+    padding-right: 400px;
+    padding-bottom: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.counter {
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+}
+/* 
+#win-counter {
+    font-size: 25px;
+    
+}
+
+#loss-counter {
+    font-size: 25px;
+} */
+
+#crystal1 {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+#crystal2 {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+#crystal3 {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+#crystal4 {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.score {
+    font-size: 50px;
+    background-color: darkcyan;
+    color: white;
 }

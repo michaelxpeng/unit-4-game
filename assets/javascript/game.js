@@ -32,12 +32,16 @@
         if (userTally === targetNumber) {
             winCounter++;
             $("#win-counter").html(winCounter);
-            alert("You win!");
+            alert("You win! Click on New Game to start again.");
+            userTally = 0;
+            $("#user-tally").text(userTally);
         }
         else if (userTally >= targetNumber) {
             lossCounter++;
             $("#loss-counter").html(lossCounter);
-            alert("You lose!");
+            alert("You lose! Click on New Game to start again.");
+            userTally = 0;
+            $("#user-tally").text(userTally);
         }
     });
 
@@ -49,12 +53,16 @@
         if (userTally === targetNumber) {
             winCounter++;
             $("#win-counter").html(winCounter);
-            alert("You win!");
+            alert("You win! Click on New Game to start again.");
+            userTally = 0;
+            $("#user-tally").text(userTally);
         }
         else if (userTally >= targetNumber) {
             lossCounter++;
             $("#loss-counter").html(lossCounter);
-            alert("You lose!");
+            alert("You lose! Click on New Game to start again.");
+            userTally = 0;
+            $("#user-tally").text(userTally);
         }
     });
 
@@ -66,12 +74,16 @@
         if (userTally === targetNumber) {
             winCounter++;
             $("#win-counter").html(winCounter);
-            alert("You win!");
+            alert("You win! Click on New Game to start again.");
+            userTally = 0;
+            $("#user-tally").text(userTally);
         }
         else if (userTally >= targetNumber) {
             lossCounter++;
             $("#loss-counter").html(lossCounter);
-            alert("You lose!");
+            alert("You lose! Click on New Game to start again.");
+            userTally = 0;
+            $("#user-tally").text(userTally);
         }
     });
 
@@ -83,13 +95,28 @@
         if (userTally === targetNumber) {
             winCounter++;
             $("#win-counter").html(winCounter);
-            alert("You win!");
+            alert("You win! Click on New Game to start again.");
+            userTally = 0;
+            $("#user-tally").text(userTally);
         }
         else if (userTally >= targetNumber) {
             lossCounter++;
             $("#loss-counter").html(lossCounter);
-            alert("You lose!");
+            alert("You lose! Click on New Game to start again.");
+            userTally = 0;
+            $("#user-tally").text(userTally);
         }
+    });
+
+    $('.reset').on("click", function(){
+        targetNumber = Math.floor(Math.random() * (120 - 19)) + 19;
+        $("#target-number").text(targetNumber);
+        crystal1Value = Math.floor(Math.random() * (12 - 1)) + 1;
+        crystal2Value = Math.floor(Math.random() * (12 - 1)) + 1;
+        crystal3Value = Math.floor(Math.random() * (12 - 1)) + 1;
+        crystal4Value = Math.floor(Math.random() * (12 - 1)) + 1;
+        userTally = 0;
+        $("#target-number").text(targetNumber);
     });
     // Allow user's tally to update the numbers according to the crystals clicked
 
